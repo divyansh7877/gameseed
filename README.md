@@ -2,6 +2,8 @@
 
 GameSeed is a template-driven prompt-to-game pipeline that turns a text prompt into a playable Phaser endless runner. It provides a small studio UI, an async FastAPI backend, and a manifest-driven runtime that can use Tripo for foreground sprites, BytePlus for layered backgrounds, and Gemini for bounded spec and manifest validation.
 
+Tripo Asset creation done in : https://github.com/divyansh7877/tripo-asset
+
 ## What This Repo Contains
 
 - FastAPI backend for job creation, polling, manifest delivery, and the play page
