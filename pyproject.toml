@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gameseed-runner"
+version = "0.1.0"
+description = "Prompt-to-game runner_v1 pipeline with Phaser, Tripo, and BytePlus."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115,<1.0",
+  "httpx>=0.28,<1.0",
+  "pillow>=11.0,<12.0",
+  "pydantic-settings>=2.6,<3.0",
+  "python-multipart>=0.0.20,<1.0",
+  "uvicorn>=0.34,<1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
